@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="cz">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>House Fix</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>House Fix</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -21,7 +23,7 @@
             <span class="header__address">Praha</span>
             <a href="tel:+420777167699" class="header__phone">+420 777 167 699</a>
           </div>
-          <button class="button header__button">Zavolejte mi</button>
+          <button class="button header__button" id="button">Zavolejte mi</button>
         </div>
       </div>
     </div>
@@ -51,7 +53,7 @@
                   <img src="img/paint.png" alt="Paleta">
                 </div>
                 <span class="main-list__text">Nabídneme vám více než 100 možností provedení designu vašeho bydlení</span>
-              </li>  
+              </li>
             </ul>
           </div>
           <div class="main-image">
@@ -60,6 +62,34 @@
         </div>
       </div>
     </section>
+    <section class="offer">
+      <div class="container">
+        <div class="offer-block">
+          <h2 class="offer-title">Bezplatně vypracujeme design-projekt pro Váš domov a realizujeme ho!</h2>
+          <span class="offer-subtitle">Zanechte poptávku pro vypracování bezplatného design-projektu!</span>
+          <form action="" class="form offer__form">
+            <input type="text" class="input offer__input" placeholder="Vaše jméno">
+            <input type="tel" class="input offer__input" placeholder="Váš telefon">
+            <button class="button offer__button">Získejte bezplatný design-projekt</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+        <button class="modal-dialog__close">&times;</button>
+        <h4 class="modal-dialog__title">Modální okno</h4>      
+
+    </div>
+  </div>
+
+
+
+  <script src="js/main.js"></script>
+
+
 </body>
+
 </html>
