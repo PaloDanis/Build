@@ -50,6 +50,14 @@ img {
   font-size: 15px;
 }
 
+.section-title {
+  font-size: 30px;
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+}
+
 .container {
   max-width: 1170px;
   width: 96%;
@@ -360,6 +368,33 @@ img {
   .offer__button {
     font-size: 16px;
   }
+}
+
+.portfolio {
+  padding: 100px 0;
+  background: #f5f5f5 url("../img/Portfolio-bg.png") left repeat-y;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  margin-bottom: 100px;
+  color: #333333;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.arrows_left, .arrows_right {
+  cursor: pointer;
 }
 
 .modal {

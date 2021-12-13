@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>House Fix</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -75,18 +76,43 @@
         </div>
       </div>
     </section>
+    <section class="portfolio">
+      <div class="container">
+        <h2 class="section-title portfolio_title">Za dobu práce od roku 2007, <br> jsme realizovali více než 500 oprav bytů a domů
+        </h2>    
+        <div class="slider">
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio1.jpg" alt="Obrázok1"></div>
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio2.jpg" alt="Obrázok2"></div>
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio3.jpg" alt="Obrázok3"></div>
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio1.jpg" alt="Obrázok1"></div>
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio2.jpg" alt="Obrázok2"></div>
+          <div class="slider__item"><img class="slider__image" src="img/Portfolio3.jpg" alt="Obrázok3"></div>
+        </div>
+        <div class="arrows portfolio__arrows">
+          <div class="arrows_left">
+            <img src="img/left-arrow.png" alt="Levá šipka">
+          </div>
+          <div class="arrows_right">
+            <img src="img/right-arrow.png" alt="Pravá šipka">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 
   <div class="modal" id="modal">
     <div class="modal-dialog">
-        <button class="modal-dialog__close">&times;</button>
+        <button class="modal-dialog__close" id="close">&times;</button>
         <h4 class="modal-dialog__title">Modální okno</h4>      
 
     </div>
   </div>
 
 
-
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 
 
