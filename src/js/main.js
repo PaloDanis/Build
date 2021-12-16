@@ -1,6 +1,9 @@
-
 $(document).ready(function(){
-    var button = $('#button');
+  
+  // Napojenie knihovne wow.js - animácie
+  new WOW().init();
+
+  var button = $('#button');
     var modal = $('#modal');
     var close = $('#close');
     
@@ -14,6 +17,8 @@ $(document).ready(function(){
 
     });
 });
+
+// Napojenie slidrov
     $('.slider').slick({
         slidesToShow: 3,
         prevArrow: $('.arrows_left'),
