@@ -435,6 +435,17 @@ img {
           justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .card {
   text-align: center;
   margin-top: 30px;
@@ -610,27 +621,133 @@ img {
 
 .notice {
   background-color: #ffc000;
-  height: 280px;
+  padding: 100px 0;
 }
 
 .notice__text {
   font-size: 32px;
-  font-weight: 400;
-  padding-top: 100px;
-  padding-bottom: 100px;
   text-align: center;
+  max-width: 800px;
   margin: auto;
-  max-width: 750px;
   line-height: 50px;
+  font-weight: 300;
 }
 
 @media (max-width: 640px) {
   .notice__text {
     text-align: center;
     font-size: 18px;
-    padding-left: 27px;
-    padding-right: 27px;
+    padding: 25px 27px;
   }
+}
+
+.info {
+  padding: 100px 0;
+}
+
+.info__block {
+  margin-bottom: 150px;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 850px) {
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.benefit {
+  background-color: #f7f7f7;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 370px;
+  position: relative;
+}
+
+@media (max-width: 920px) {
+  .benefit {
+    font-size: 80%;
+    margin-top: 50px;
+  }
+}
+
+.benefit__image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.benefit__text {
+  margin: 26px 100px 0 26px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.benefit__text strong {
+  font-family: 'Museo Sans Bold';
+  font-weight: 700;
+}
+
+.documents-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 920px) {
+  .documents-block {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 850px) {
+  .documents-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 50px;
+  }
+}
+
+.documents-block__text {
+  text-align: center;
+  margin-top: 40px;
+  line-height: 24px;
+  font-size: 18px;
+}
+
+.documents__title {
+  margin-bottom: 100px;
 }
 
 .modal {
