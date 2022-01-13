@@ -17,6 +17,22 @@ $(document).ready(function(){
 
     });
 });
+// Napojenie formularov
+$('#brief-form').validate({
+  rules:{
+    username: "required",
+    phone: "required",
+    email:{
+      required: true,
+      email: true
+    },
+  },
+  messages:{
+    username: "Uveďte, prosím Vaše meno",
+    phone: "Doplňte Vaše telefónne číslo",
+    email: "Uveďte, prosím Váš email",
+  }
+});
 
 // Napojenie slidrov
     $('.slider').slick({
